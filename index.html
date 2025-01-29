@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lmmartins</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--GoogleHL-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--Images Loaded-->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!--UNPKG-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!--fonts-->
+    <link rel='stylesheet' href="/fonts/inter.css?v=3.15">
+    <!--Isotype-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!--Font Awesome 5-->
+    <script src="https://kit.fontawesome.com/e7c114b692.js" crossorigin="anonymous"></script>
+</head>
+<!--By Pedro Martins
+    Ver: 1.0-->
+<body>
+    <!--SVG Sprites-->
+    <svg class="sprites" width="0" height="0" class="hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="lmmartins_Bathrooms">
+            <path fill="currentColor" d="M175 90c0-8.3-6.7-15-15-15H95c-1.8 0-3.4.3-5 .9V45c2.8 0 5-2.2 5-5V20c0-2.8-2.2-5-5-5H30c-2.8 0-5 2.2-5 5v20c0 2.8 2.2 5 5 5h.8l7.9 47.5c1.2 7.3 7.4 12.5 14.8 12.5H60v5c0 13.3 5.8 25.3 15 33.5V170c0 8.3 6.7 15 15 15h30c8.3 0 15-6.7 15-15v-18.8c20.1-7.9 34.5-27.3 35-50 3-2.8 5-6.8 5-11.2zm-80-5h65c2.8 0 5 2.2 5 5s-2.2 5-5 5H95c-2.8 0-5-2.2-5-5s2.2-5 5-5zM35 25h50v10H35V25zm13.5 65.8L40.9 45H80v45c0 2.8-2.2 5-5 5H53.5c-2.5 0-4.6-1.8-5-4.2zM125 170c0 2.8-2.2 5-5 5H90c-2.8 0-5-2.2-5-5v-19.7c6 3 12.8 4.7 20 4.7h10c3.4 0 6.8-.3 10-.9V170zm-10-25h-10c-19.3 0-35-15.7-35-35v-5h89.7c-2.5 22.5-21.6 40-44.7 40z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="lmmartins_Custom">
+            <path fill="currentColor" d="M183 93.3h-3.6c-2.1 0-4.1-.8-5.7-2.3l-37.4-37.4c-3.4-3.4-7.9-5.3-12.7-5.3h-2.3l-5.7-5.7c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1.1-7.1 2.9l-5.7 5.7H80.4c-4.8 0-9.3 1.9-12.7 5.3L36.8 84.5c-.6.6-1.1 1.4-1.3 2.3l-7.2 29-8.1 8.1c-.3.3-.5.6-.8.9-.1.1-.1.2-.2.3-.2.2-.4.5-.5.8-.1.1-.1.2-.2.3-.2.3-.4.7-.5 1v.1c-.2.4-.3.8-.4 1.2v.1l-5.2 19.3c-.9 3.5.1 7.1 2.6 9.7 1.9 1.9 4.5 2.9 7.1 2.9.9 0 1.7-.1 2.6-.3L44 155h.1c.2-.1.4-.1.6-.2.1 0 .2-.1.3-.1.2-.1.4-.2.5-.2 1.9.7 3.9 1.1 6 1.1H156c2.8 0 5-2.2 5-5s-2.2-5-5-5H51.5c-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5H81c19.3 0 35-15.7 35-35v-6c0-.4-.1-.8-.1-1.2l-.7-2.7.4-.4 14.1-14.1c1.9-1.9 2.9-4.4 2.9-6.9l34 34c3.4 3.4 7.9 5.3 12.7 5.3h3.6c2.8 0 5-2.2 5-5s-2.1-5.3-4.9-5.3zM108.5 78l-8.8-8.8 8.8 8.8-3.5 3.5-14.2-14.1 3.5-3.5L108.5 78zM44.8 90.6l29.9-29.9c1.5-1.5 3.5-2.3 5.7-2.3h5.3l-2 2-41.8 41.8 2.9-11.6zm-21.3 54.1l3.7-13.7 6.8 6.8c0 3.2.9 6.1 2.3 8.7l-8.7 2.3-4.1-4.1zm14.1-17.4l-3.3-3.3 49.5-49.5 14.1 14.1-31.7 31.7H51.5c-5.7 0-10.7 2.8-13.9 7zm43.4-7h-.7L106 94.6v.7c0 13.8-11.2 25-25 25zm34.6-49.4l-14.1-14.1 7.1-7.1 14.1 14.1-7.1 7.1z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="lmmartins_Kitchens">
+            <path fill="currentColor" d="M50 69h100c2.1 0 4-1.3 4.7-3.3.7-2 .1-4.2-1.6-5.6L130 41.6V14c0-2.8-2.2-5-5-5H75c-2.8 0-5 2.2-5 5v27.6L46.9 60.1c-1.7 1.3-2.3 3.6-1.6 5.6.7 2 2.6 3.3 4.7 3.3zm30-50h40v20H80V19zm-3.2 30h46.5l12.5 10H64.3l12.5-10zm85.7 130h-15v-60h15c2.8 0 5-2.2 5-5s-2.2-5-5-5h-36.4c2.4-2.7 3.9-6.2 3.9-10v-5.7c1.5-.9 2.5-2.5 2.5-4.3 0-2.8-2.2-5-5-5H120c0-2.8-2.2-5-5-5h-10c-2.8 0-5 2.2-5 5h-7.5c-2.8 0-5 2.2-5 5 0 1.8 1 3.4 2.5 4.3V99c0 3.8 1.5 7.3 3.9 10H37.5c-2.8 0-5 2.2-5 5s2.2 5 5 5h15v60h-15c-2.8 0-5 2.2-5 5s2.2 5 5 5h125c2.8 0 5-2.2 5-5s-2.2-5-5-5zM100 94h20v5c0 2.8-2.2 5-5 5h-10c-2.8 0-5-2.2-5-5v-5zm-30 85h-7.5v-35H70v35zm50 0H80v-35h40v35zm17.5 0H130v-35h7.5v35zm0-45h-75v-15h75v15z"></path>
+            <path fill="currentColor" d="M107.5 132c3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5-5.5 2.5-5.5 5.5 2.5 5.5 5.5 5.5zm15 0c3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5-5.5 2.5-5.5 5.5 2.5 5.5 5.5 5.5zm-30 0c3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5-5.5 2.5-5.5 5.5 2.5 5.5 5.5 5.5zm-15 0c3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5-5.5 2.5-5.5 5.5 2.5 5.5 5.5 5.5z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="lmmartins_Show-all">
+            <path fill="currentColor" d="M33.5 138.1v-10.7c0-3.3-2.7-6-6-6s-6 2.7-6 6v11c.1 3.3 2.7 5.9 6 5.9h.1c3.4-.1 6-2.8 5.9-6.2zm12.1 23c-2.4-1.7-4.6-3.9-6.4-6.3-2-2.7-5.7-3.2-8.4-1.2s-3.2 5.7-1.2 8.4c2.5 3.4 5.6 6.4 9 8.8 1.1.8 2.3 1.1 3.5 1.1 1.9 0 3.7-.9 4.9-2.5 2-2.6 1.3-6.4-1.4-8.3zm-18.1-49.3c3.3 0 6-2.7 6-6V95c0-3.3-2.7-6-6-6s-6 2.7-6 6v10.8c0 3.3 2.7 6 6 6zm45.8 54.7H62.4c-3.3 0-6 2.7-6 6s2.7 6 6 6h10.8c3.3 0 6-2.7 6-6s-2.6-6-5.9-6zM27.5 79.3c3.3 0 6-2.7 6-6V62.5c0-3.3-2.7-6-6-6s-6 2.7-6 6v10.8c0 3.3 2.7 6 6 6zm66.7-45.8H105c3.3 0 6-2.7 6-6s-2.7-6-6-6H94.2c-3.3 0-6 2.7-6 6s2.7 6 6 6zm-32.5 0h10.8c3.3 0 6-2.7 6-6s-2.7-6-6-6H61.6c-3.3.1-5.9 2.8-5.9 6.1.1 3.3 2.7 5.9 6 5.9zM30.5 47.1c1.1.8 2.3 1.1 3.5 1.1 1.9 0 3.7-.9 4.9-2.5 1.7-2.4 3.9-4.6 6.3-6.4 2.7-2 3.2-5.7 1.2-8.4s-5.7-3.2-8.4-1.2c-3.4 2.5-6.4 5.6-8.8 9-2 2.7-1.4 6.4 1.3 8.4zm96.2-13.6h10.9c3.3 0 6-2.7 6-6s-2.7-6-6-6h-10.9c-3.3 0-6 2.7-6 6s2.7 6 6 6zm45.8 54.8c-3.3 0-6 2.7-6 6v10.8c0 3.3 2.7 6 6 6s6-2.7 6-6V94.3c0-3.3-2.7-6-6-6zm-3 64.7c-2.7-1.9-6.4-1.3-8.4 1.4-1.8 2.4-3.9 4.6-6.3 6.4-2.7 2-3.2 5.7-1.2 8.4 1.2 1.6 3 2.4 4.8 2.4 1.2 0 2.5-.4 3.6-1.2 3.4-2.5 6.4-5.6 8.8-9 2-2.7 1.3-6.5-1.3-8.4zm3-32.2c-3.3 0-6 2.7-6 6v10.8c0 3.3 2.7 6 6 6s6-2.7 6-6v-10.8c0-3.3-2.7-6-6-6zm6-59.1c-.1-3.3-2.8-6-6.1-5.9-3.3.1-5.9 2.8-5.9 6.1v10.7c0 3.3 2.7 6 6 6s6-2.7 6-6V61.7zm-24.1-22.8c2.4 1.8 4.6 3.9 6.4 6.3 1.2 1.6 3 2.4 4.8 2.4 1.2 0 2.5-.4 3.6-1.2 2.7-2 3.2-5.7 1.2-8.4-2.5-3.4-5.6-6.4-9-8.9-2.7-1.9-6.4-1.3-8.4 1.4-1.9 2.8-1.3 6.5 1.4 8.4zm-48.7 127.6H94.9c-3.3 0-6 2.7-6 6s2.7 6 6 6h10.8c3.3 0 6-2.7 6-6s-2.6-6-6-6zm32.5 0h-10.8c-3.3 0-6 2.7-6 6s2.7 6 6 6h11c3.3-.1 5.9-2.8 5.9-6.1-.1-3.3-2.8-5.9-6.1-5.9zM100 60c-23.6 0-44.2 15.9-50 38.8-.2.8-.2 1.7 0 2.5 5.9 22.8 26.4 38.8 50 38.8s44.2-15.9 50-38.8c.2-.8.2-1.7 0-2.5-5.8-22.9-26.4-38.8-50-38.8zm0 70c-18.6 0-34.9-12.3-40-30 5.1-17.7 21.4-30 40-30s34.9 12.3 40 30c-5.1 17.7-21.4 30-40 30z"></path>
+            <path fill="currentColor" d="M112.2 89.7c-1 3.3-4.3 5.6-8.1 5.2-3.4-.4-6.1-3.1-6.5-6.4-.2-1.6.1-3.1.7-4.4.4-.7-.3-1.5-1-1.4-9 1.4-15.8 9.7-14.6 19.4.9 8 7.4 14.4 15.4 15.3 10.6 1.2 19.5-7.1 19.5-17.4 0-4-1.3-7.7-3.6-10.6-.6-.7-1.6-.5-1.8.3z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="lmmartins_Tiling">
+            <path fill="currentColor" d="M190 120h-45V80h45c2.8 0 5-2.2 5-5s-2.2-5-5-5h-85V30h55c2.8 0 5-2.2 5-5s-2.2-5-5-5H40c-2.8 0-5 2.2-5 5s2.2 5 5 5h55v40H10c-2.8 0-5 2.2-5 5s2.2 5 5 5h45v40H10c-2.8 0-5 2.2-5 5s2.2 5 5 5h85v40H40c-2.8 0-5 2.2-5 5s2.2 5 5 5h120c2.8 0 5-2.2 5-5s-2.2-5-5-5h-55v-40h85c2.8 0 5-2.2 5-5s-2.2-5-5-5zm-125 0V80h70v40H65z"></path>
+        </symbol>
+    </svg>
+    <div class="header" id="navbar">
+        <div class="header-left">
+            <img class="logo" src="img/lm_logo.png" alt="lm">
+        </div>
+        <div class="header-middle">
+            <button class="btn is-checked" data-filter="*"><div id="Full">Show all</div>
+                <svg id="Min" class="icon"><use xlink:href="#lmmartins_Show-all"></use></svg></button>
+            <button class="btn" data-filter=".Kitchens"><div id="Full">Kitchens</div>
+                <svg id="Min" class="icon"><use xlink:href="#lmmartins_Kitchens"></use></svg></button>
+            <button class="btn" data-filter=".Bathrooms"><div id="Full">Bathrooms</div>
+                <svg id="Min" class="icon"><use xlink:href="#lmmartins_Bathrooms"></use></svg></button>
+            <button class="btn" data-filter=".Tiling"><div id="Full">Tiling</div>
+                <svg id="Min" class="icon"><use xlink:href="#lmmartins_Tiling"></use></svg></button>
+            <button class="btn" data-filter=".Custom"><div id="Full">Custom</div>
+                <svg id="Min" class="icon"><use xlink:href="#lmmartins_Custom"></use></svg></button>
+        </div>
+        <div class="header-right">
+            <a href="mailto:luismartins@btinternet.com" target="_top" class="headernav">Email</a>
+                <a href="mailto:luismartins@btinternet.com" target="_top" class="headericon"><i class="far fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/lm-martins" target="_blank" class="headernav">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/lm-martins" target="_blank" class="headericon"><i class="fab fa-linkedin"></i></a>
+            <a class="headernav" onclick="myFunction()">About</a>
+                <a class="headericon" onclick="myFunction()"><i class="far fa-question-circle"></i></a>
+        </div>
+        <div class="about_me" id="collapse">
+            <div class="col_left">
+                <p>My name is Luis Martins. I am a qualified Installer, with over 37 years of experience, based in the South West of England.</p>
+                <h1>QUALIFICATIONS:</h1>
+                <ul>
+                    <li>CAA | Cskills Awards Level 3 National Vocational Qualification in Wood Occupation–Site Carpentry</li>
+                    <li>Construction Skills | Operatives–Health and Safety (Carpentry and Joinery NVQ Level 3)</li>
+                    <li>UKasl | Asbestos Awareness Course</li>
+                    <li>BiKBBI | Certificate of Membership</li>
+                </ul>
+            </div>
+            <div class="col_right">
+                <img src="img\Qualifications\CITB-Construction-Skills.png" alt="City & Guilds" id="certificate">
+                <img src="img\Qualifications\CAA.png" alt="City & Guilds" id="certificate">
+                <img src="img\Qualifications\UKasl-Asbestos-Specialists.png" alt="City & Guilds" id="certificate">
+                <img src="img\Qualifications\BiKBBI-Member-Digital-Transparant.png" alt="City & Guilds" id="certificate">
+            </div>
+        </div>    
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-J-Shower-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Bathroom-J-Corner-Box-L.jpg"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-P-Whole-L.jpg"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-G-Shower-L.jpg"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-J-Radiator-L.jpg"></div>
+                <div class="grid-item Tiling"><img class="myImg" src="img/Bathroom-J-Wall-tiles-L.jpg"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-M-Shower-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Ceiling-lights-L.jpg"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-J-Bathtub-corner-L.jpg"></div>
+                <div class="grid-item Tiling"><img class="myImg" src="img/Bathroom-E-Shower-L.jpg"></div>
+                <div class="grid-item Tiling"><img class="myImg" src="img/Bathroom-G-Toilet-L.jpg"></div>
+                <div class="grid-item Tiling"><img class="myImg" src="img/Bathroom-B-Shower-tiles-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Bathroom-J-Shower-corner-L.jpg"></div>
+                <div class="grid-item Tiling"><img class="myImg" src="img/Bathroom-J-Shower-Tiling-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Flooring-A-Intersection-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Shower-plumbing-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Bathroom-Shower-waterproofing-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-A-Corner-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-Floor-Lights-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Flooring-S-Hallway-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-C-Top-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-A-Full-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-B-Top-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-G-Top-L.jpg"></div>
+                <div class="grid-item Kitchens"><img class="myImg" src="img/Kitchen-B-Sink-L.jpg"></div>
+                <div class="grid-item Custom"><img class="myImg" src="img/Lounge-Flooring-L.jpg"></div>
+                <div class="grid-item Bathrooms"><img class="myImg" src="img/Bathroom-Y-Sink-L.jpg"></div>
+        </div>
+    </div>
+<!-- The Modal -->
+<div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">⌧</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<div class="copyright">© Luis Martins, 2021. All Rights Reserved | Typeset in <a href="https://rsms.me/inter/" target="_blank">Inter</a>. Website design by <a href="https://pmgd.me" target="_blank">Pedro Martins</a>.</div>
+<footer>
+    <!--Javascript-->
+    <script src="js/main.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</footer>
+</body>
+</html>

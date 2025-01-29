@@ -1,0 +1,523 @@
+/*  By Pedro Martins
+    Ver: 1.0*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    margin-top: 37px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    max-width: 100%;
+    background-color: rgb(245, 247, 219);
+}
+.header{
+    max-width: 100%;
+    outline: 10px solid rgb(87, 87, 87);
+    outline-offset: -5px;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+@media (min-height: 300px) {
+    .header{
+        position: sticky;
+        top: 3.4px;
+        width: auto;
+        left: 40px;
+        right: 40px;
+        background-color: rgb(245, 247, 219);
+        z-index: 1;
+    }
+}
+.logo{
+    width: 90px;
+    padding-top: 10px;
+}
+.header-left,
+.header-middle,
+.header-right{
+    height: 90px;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    outline: 5px solid rgb(87, 87, 87);
+    text-align: center;
+}
+.header-left{
+    width: 11.11%;
+}
+.header-middle{
+    width: 55.55%;
+    display: flex;
+}
+.header-right{
+    width: 33.33%;
+    display: flex;
+}
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#Min{
+    display: none;
+}
+.sprites{
+    display: none;
+}
+.icon{
+    height: 59px;
+    width: 59px;
+    margin: auto;
+}
+.headericon,
+.headernav,
+.btn,
+button{
+    height: auto;
+    margin: 4.5px;
+    position: relative;
+    padding: 27px 0px;
+    width: 100%;
+    font-size: 17pt;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+.headernav:hover,
+.headericon:hover,
+.btn:hover{
+    color: rgb(220, 77, 84);
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: normal;
+    transition: 0.1s;
+}
+.btn.is-checked{
+    color: rgb(245, 247, 219);
+    background-color: rgb(220, 77, 84);
+}
+.headericon{
+    display:none;
+ }
+.about_me{
+    max-width: 100%;
+    outline: 10px solid rgb(87, 87, 87);
+    outline-offset: -5px;
+    padding: 35px 45px;
+    display: none;
+    overflow: hidden;
+}
+.col_left{
+    width: 670px;
+    text-align: left;
+    float: left;
+}
+.col_right{
+    padding-top: 10px;
+    width: 30.33%;
+    text-align: justify;
+    float: right;
+}
+#certificate{
+    max-height: 135px;
+    max-width: 100%;
+    width: auto;
+    padding-bottom: 28px;
+}
+h1,
+p,
+li{
+    line-height: 24pt;
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+h1{
+    font-weight: 700;
+    padding-top: 24pt;
+}
+p,
+li{
+    font-weight: 500;
+}
+li{
+    padding-bottom: 16pt;
+    margin-left: -16px;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 0;
+    max-width: 100%;
+}
+img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Masonry grid begin */
+.grid{
+    margin: 0% auto;
+}
+/* clearfix */
+.grid:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid-sizer,
+.grid-item{
+    margin: 0;
+    width: 33.33%;
+}
+.gutter-sizer{
+    width: 0px;
+}
+.grid-item{
+    height: auto;
+    float: left;
+    outline: 10px solid rgb(87, 87, 87);
+    outline-offset: -5px;
+}
+.grid-item img:hover{
+    outline: 10px solid rgb(220, 77, 84);
+    outline-offset: -10px;
+    transition: 0.1s;
+}
+.grid-item.grid-item__expanded{
+    width: 66.66%;
+    z-index: 2;
+}
+/* Masonry grid end */
+
+/*Modal begin*/
+ /* Style the Image Used to Trigger the Modal */
+ .myImg{
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* The Modal (background) */
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 0.1%; /* Location of the box */
+    padding-top: 1.4%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content{
+    margin: auto;
+    display: block;
+    max-height: 93%;
+    width: auto;
+    max-width: 100%;
+    outline: 10px solid rgb(87, 87, 87);
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(245, 247, 219);
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.4s;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+/* The Close Button */
+.close{
+    position: absolute;
+    top: -5px;
+    left: 2%;
+    color: rgb(87, 87, 87);
+    font-size: 65pt;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: 0.3s;
+    z-index: 2;
+}
+.close:hover,
+.close:focus {
+    color: rgb(220, 77, 84);
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Modal end*/
+.copyright{
+    padding-top: 50px;
+    font-size: 14pt;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+a:link{
+    color: rgb(87, 87, 87);
+    background-color: transparent;
+}
+a:visited{
+    color: rgb(87, 87, 87);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(220, 77, 84);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* Tablet view breakpoints */
+@media only screen and (max-width: 1250px){
+    body{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .logo{
+        width: 60px;
+    }
+    .header-left,
+    .header-middle,
+    .header-right{
+        height: 66px;
+    }
+    .header-left{
+        width: 15%;
+    }
+    .header-middle{
+        width: 60%;
+        display: flex;
+    }
+    .header-right{
+        width: 25%;
+        display: flex;
+    }
+    .headernav{
+        display: none;
+    }
+    .headericon{
+        display: inline-block;
+    }
+    .about_me{
+        padding: 25px 25px;
+    }
+    .col_left{
+        width: 460px;
+    }
+    .col_right{
+        width: 25%;
+    }
+    #certificate{
+        max-height: 75px;
+        padding-bottom: 30px;
+    }
+    h1,
+    p,
+    li{
+        line-height: 18pt;
+        font-size: 14pt;
+    }
+    h1{
+        padding-top: 18pt;
+    }
+    li{
+        padding-bottom: 18pt;
+        margin-left: -22px;
+    }
+    .headernav,
+    .btn,
+    button{
+        margin: 5px;
+        width: 100%;
+        padding: 0;
+        font-size: 12pt;
+    }
+    .headericon{
+        margin: auto;
+        padding: 0;
+        font-size: 18pt;
+    }
+    .grid-sizer,
+    .grid-item{
+        width: 50%;
+    }
+    .close{
+        font-size: 38pt;
+        top: 0;
+    }
+    .modal{
+        padding-top: 1.4%;
+    }
+    .modal-content, #caption{
+        max-height: 90%;
+        max-width: 85%;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+    .copyright{
+        padding-top: 40px;
+        font-size: 15pt;
+    }
+}
+
+/* Mobile view breakpoints */
+@media only screen and (max-width: 850px){
+    body{
+        margin-top: 3.5px;
+        margin-bottom: 100px;
+        margin-right: 3.5px;
+        margin-left: 3.5px;
+    }
+    .logo{
+        width: 50px;
+    }
+    .header-left,
+    .header-middle,
+    .header-right{
+        height: 60px;
+        background-color: rgb(245, 247, 219);
+        z-index: 1;
+    }
+    .header-left{
+        width: 20%;
+    }
+    .header-middle{
+        overflow: hidden;
+        position: fixed;
+        bottom: 3.5px;
+        height: 65px;
+        width: auto;
+        left: 3.5px;
+        right: 3.5px;
+        background-color: rgb(245, 247, 219);
+    }
+    .header-right{
+        min-width: 80%;
+        right: 3.5px;
+    }
+    .headernav{
+        display: none;
+    }
+    .headericon{
+        display: inline-block;
+        font-size: 20pt;
+    }
+    #Full{
+        display: none;
+    }
+    #Min{
+        display: block;
+    }
+    .about_me{
+        padding: 20px 20px;
+    }
+    .col_left{
+        width: 100%;
+    }
+    .col_right{
+        padding-top: 0px;
+        width: 100%;
+    }
+    #certificate{
+        max-height: 32px;
+        padding-bottom: 20px;
+    }
+    h1,
+    p,
+    li{
+        line-height: 15pt;
+        font-size: 12pt;
+    }
+    h1{
+        padding-top: 15pt;
+    }
+    li{
+        padding-bottom: 12pt;
+    }
+        @media only screen and (max-width: 350px){
+            h1,
+            p,
+            li{
+                line-height: 120%;
+                font-size: 80%;
+            }
+        }
+    .headernav,
+    .btn,
+    button{
+        margin: 3px;
+        width: 100%;
+    }
+    .headericon{
+        padding: 0;
+        margin: auto;
+    }
+    .grid-sizer,
+    .grid-item{
+        width: 100%;
+    }
+    .header,
+    .header-left,
+    .header-middle,
+    .header-right,
+    .about_me,
+    .grid-item{
+        outline: 7px solid rgb(87, 87, 87);
+        outline-offset: -3.5px;
+    }
+    .close{
+        font-size: 45pt;
+    }
+    .modal-content{
+        outline: 8px solid rgb(87, 87, 87);
+    }
+    .modal-content, #caption{
+        max-height: 85%;
+    }
+    .copyright{
+        padding-top: 25px;
+        font-size: 9.5pt;
+    }
+}
